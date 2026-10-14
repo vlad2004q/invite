@@ -42,7 +42,6 @@
     50% { transform: translateY(-50px) scale(1.1); opacity: 1; }
   }
 
-  /* Кнопка музыки */
   .music-btn {
     position: fixed; top: 18px; right: 18px; z-index: 100;
     width: 46px; height: 46px; border-radius: 50%; border: none;
@@ -61,7 +60,7 @@
     background: rgba(255,255,255,0.72);
     backdrop-filter: blur(24px) saturate(140%);
     -webkit-backdrop-filter: blur(24px) saturate(140%);
-    padding: 1.8rem 1.4rem;
+    padding: 1.6rem 1.4rem;
     border-radius: 32px;
     box-shadow:
       0 30px 70px rgba(122, 76, 168, 0.22),
@@ -72,7 +71,7 @@
     width: 92%;
     position: relative;
     z-index: 10;
-    min-height: 600px;
+    min-height: 580px;
     max-height: 90vh;
     overflow-y: auto;
     display: flex; flex-direction: column;
@@ -87,7 +86,7 @@
   }
 
   .love-layer {
-    position: absolute; top: 0; left: 0; right: 0; height: 120px;
+    position: absolute; top: 0; left: 0; right: 0; height: 110px;
     pointer-events: none; z-index: 1; overflow: hidden;
     border-radius: 32px 32px 0 0;
     -webkit-mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
@@ -99,8 +98,6 @@
     will-change: transform; user-select: none;
   }
   .love-sticker.cat { font-size: 1.9rem; opacity: 0.9; }
-  .love-sticker.small { font-size: 1rem; opacity: 0.75; }
-  .love-sticker.tiny { font-size: 0.8rem; opacity: 0.6; }
 
   .anim-hop { animation: hop 3s ease-in-out infinite; }
   @keyframes hop { 0%, 100% { transform: translateY(0) rotate(-6deg) scale(1); } 50% { transform: translateY(0) rotate(-4deg) scale(1); } }
@@ -117,8 +114,8 @@
 
   h1 {
     font-family: 'Playfair Display', serif;
-    color: #6a3f9e; font-size: 1.85rem; margin: 0 0 0.8rem;
-    line-height: 1.25; font-weight: 700; letter-spacing: -0.01em;
+    color: #6a3f9e; font-size: 1.75rem; margin: 0 0 0.6rem;
+    line-height: 1.2; font-weight: 700; letter-spacing: -0.01em;
     text-shadow: 0 2px 20px rgba(200, 150, 255, 0.35);
     position: relative; z-index: 3;
   }
@@ -127,23 +124,23 @@
     background: linear-gradient(135deg, #b06ab3, #ff6b9d);
     -webkit-background-clip: text; -webkit-text-fill-color: transparent;
   }
-  p { color: #7c6b92; font-size: 1rem; margin: 0 0 1rem; font-weight: 500; position: relative; z-index: 3; }
+  p { color: #7c6b92; font-size: 0.95rem; margin: 0 0 0.8rem; font-weight: 500; position: relative; z-index: 3; }
   .divider {
-    width: 60px; height: 2px; margin: 0.6rem auto 1.2rem;
+    width: 50px; height: 2px; margin: 0.5rem auto 1rem;
     background: linear-gradient(90deg, transparent, #d4a5ff, #ffb3d9, transparent);
     border-radius: 2px; position: relative; z-index: 3;
   }
   .emoji-big {
-    font-size: 3.6rem; line-height: 1; display: inline-block;
+    font-size: 3.2rem; line-height: 1; display: inline-block;
     animation: bounce 2.4s ease-in-out infinite;
     filter: drop-shadow(0 10px 18px rgba(180,120,220,0.35));
-    margin-bottom: 0.3rem; position: relative; z-index: 3;
+    margin-bottom: 0.2rem; position: relative; z-index: 3;
   }
-  @keyframes bounce { 0%,100% { transform: translateY(0) rotate(-4deg); } 50% { transform: translateY(-12px) rotate(4deg); } }
+  @keyframes bounce { 0%,100% { transform: translateY(0) rotate(-4deg); } 50% { transform: translateY(-10px) rotate(4deg); } }
   
   button {
-    border: none; border-radius: 50px; padding: 1rem 2rem;
-    font-size: 1.05rem; font-weight: 700; cursor: pointer;
+    border: none; border-radius: 50px; padding: 0.9rem 1.8rem;
+    font-size: 1rem; font-weight: 700; cursor: pointer;
     transition: transform 0.25s cubic-bezier(0.22,1,0.36,1), box-shadow 0.25s ease, background 0.25s ease;
     font-family: 'Manrope', sans-serif; letter-spacing: 0.02em;
     position: relative; z-index: 3;
@@ -166,12 +163,12 @@
   #s1 { padding: 0; }
   .scratch-title {
     font-family: 'Playfair Display', serif;
-    font-size: 1.7rem; color: #6a3f9e; margin-bottom: 0.4rem;
+    font-size: 1.6rem; color: #6a3f9e; margin-bottom: 0.3rem;
     font-weight: 700; line-height: 1.2; position: relative; z-index: 3;
   }
-  .scratch-sub { font-size: 0.92rem; color: #8a76a8; margin-bottom: 1.2rem; font-weight: 500; position: relative; z-index: 3; }
+  .scratch-sub { font-size: 0.88rem; color: #8a76a8; margin-bottom: 1rem; font-weight: 500; position: relative; z-index: 3; }
   .scratch-wrap {
-    position: relative; width: 100%; height: 320px; border-radius: 24px;
+    position: relative; width: 100%; height: 300px; border-radius: 24px;
     background: linear-gradient(135deg, #fff5fa 0%, #f3e5ff 50%, #ffe8f3 100%);
     box-shadow: 0 20px 45px rgba(160, 100, 200, 0.22), 0 0 0 3px rgba(255,255,255,0.5);
     margin: 0; overflow: hidden; isolation: isolate; z-index: 2;
@@ -180,10 +177,10 @@
     position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
     padding: 1rem; text-align: center; background: radial-gradient(circle at 50% 40%, rgba(255,255,255,0.6), transparent 70%); z-index: 1;
   }
-  .scratch-content .big-emoji { font-size: 4.5rem; animation: pulse 2s infinite; filter: drop-shadow(0 8px 16px rgba(200,120,220,0.4)); }
+  .scratch-content .big-emoji { font-size: 4rem; animation: pulse 2s infinite; filter: drop-shadow(0 8px 16px rgba(200,120,220,0.4)); }
   @keyframes pulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.08)} }
-  .scratch-content h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: #7a4ca8; margin: 0.6rem 0 0.3rem; font-weight: 700; }
-  .scratch-content p { font-size: 0.92rem; color: #9578b8; margin: 0; font-weight: 500; }
+  .scratch-content h2 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #7a4ca8; margin: 0.5rem 0 0.2rem; font-weight: 700; }
+  .scratch-content p { font-size: 0.88rem; color: #9578b8; margin: 0; font-weight: 500; }
   .scratch-canvas { position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: block; cursor: grab; z-index: 2; border-radius: 24px; }
   .scratch-canvas:active { cursor: grabbing; }
   .progress-bar {
@@ -193,98 +190,103 @@
   .progress-fill { height: 100%; width: 0%; background: linear-gradient(90deg, #ff6b9d, #c88bff); border-radius: 5px; transition: width 0.15s ease; }
 
   #s2 { position: relative; }
-  .answer-btns { display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem; position: relative; min-height: 60px; align-items: center; z-index: 5; }
+  .answer-btns { display: flex; justify-content: center; gap: 1rem; margin-top: 1.2rem; position: relative; min-height: 60px; align-items: center; z-index: 5; }
   #noBtn {
-    position: relative; white-space: nowrap; font-size: 1.05rem; line-height: 1; padding: 1rem 2rem; z-index: 50;
+    position: relative; white-space: nowrap; font-size: 1rem; line-height: 1; padding: 0.9rem 1.8rem; z-index: 50;
     transition: left 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), top 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
   #noBtn.absolute { position: absolute; box-shadow: 0 10px 26px rgba(180,140,220,0.4); transform-origin: center center; }
 
-  /* Слайдер воспоминаний */
   .memory-slider {
-    background: rgba(255,255,255,0.65); border-radius: 20px; padding: 1rem; margin-bottom: 1rem;
+    background: rgba(255,255,255,0.65); border-radius: 20px; padding: 0.9rem; margin-bottom: 0.8rem;
     box-shadow: inset 0 0 0 1px rgba(255,255,255,0.9), 0 10px 25px rgba(160,100,200,0.12);
     position: relative; z-index: 3;
   }
-  .memory-card { display: none; font-size: 0.92rem; color: #7a4ca8; font-weight: 600; line-height: 1.4; }
+  .memory-card { display: none; font-size: 0.88rem; color: #7a4ca8; font-weight: 600; line-height: 1.35; }
   .memory-card.active { display: block; animation: fadeIn 0.5s ease; }
-  .memory-card span { display: block; font-size: 2.2rem; margin-bottom: 0.3rem; }
-  .memory-dots { display: flex; justify-content: center; gap: 6px; margin-top: 0.6rem; }
-  .memory-dot { width: 7px; height: 7px; border-radius: 50%; background: #d0c4e0; transition: background 0.3s; cursor: pointer; }
+  .memory-card span { display: block; font-size: 2rem; margin-bottom: 0.2rem; }
+  .memory-dots { display: flex; justify-content: center; gap: 6px; margin-top: 0.5rem; }
+  .memory-dot { width: 6px; height: 6px; border-radius: 50%; background: #d0c4e0; transition: background 0.3s; cursor: pointer; }
   .memory-dot.active { background: #ff6b9d; transform: scale(1.2); }
 
   .picker {
-    background: rgba(255,255,255,0.65); border-radius: 24px; padding: 1rem;
+    background: rgba(255,255,255,0.65); border-radius: 22px; padding: 0.9rem;
     box-shadow: inset 0 0 0 1px rgba(255,255,255,0.9), 0 10px 30px rgba(160,100,200,0.14);
-    margin-bottom: 0.8rem; position: relative; z-index: 3;
+    margin-bottom: 0.6rem; position: relative; z-index: 3;
   }
-  .picker-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.8rem; padding: 0 0.2rem; }
-  .picker-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: #6a3f9e; font-weight: 700; }
+  .picker-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.6rem; padding: 0 0.2rem; }
+  .picker-title { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: #6a3f9e; font-weight: 700; }
   .picker-nav {
-    background: rgba(255,255,255,0.9); border: none; width: 30px; height: 30px; border-radius: 50%; padding: 0;
-    font-size: 1rem; color: #7a4ca8; display: flex; align-items: center; justify-content: center; cursor: pointer;
+    background: rgba(255,255,255,0.9); border: none; width: 28px; height: 28px; border-radius: 50%; padding: 0;
+    font-size: 0.9rem; color: #7a4ca8; display: flex; align-items: center; justify-content: center; cursor: pointer;
     box-shadow: 0 3px 10px rgba(160,100,200,0.18); font-weight: 700; transition: all 0.2s;
   }
   .picker-nav:hover:not(:disabled) { background: linear-gradient(135deg, #ff6b9d, #c88bff); color: white; transform: scale(1.1); }
   .picker-nav:disabled { opacity: 0.35; cursor: not-allowed; }
-  .picker-weekdays { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; margin-bottom: 0.3rem; }
-  .picker-weekdays div { font-size: 0.65rem; font-weight: 800; color: #b8a5d4; text-transform: uppercase; }
+  .picker-weekdays { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; margin-bottom: 0.2rem; }
+  .picker-weekdays div { font-size: 0.6rem; font-weight: 800; color: #b8a5d4; text-transform: uppercase; }
   .picker-days { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; }
   .picker-day {
-    background: transparent; border: none; padding: 0.4rem 0; font-size: 0.88rem; font-weight: 600;
-    color: #5a4a70; border-radius: 10px; cursor: pointer; font-family: inherit; transition: all 0.2s; position: relative;
+    background: transparent; border: none; padding: 0.35rem 0; font-size: 0.82rem; font-weight: 600;
+    color: #5a4a70; border-radius: 8px; cursor: pointer; font-family: inherit; transition: all 0.2s; position: relative;
   }
   .picker-day:hover:not(:disabled) { background: rgba(200,139,255,0.18); color: #6a3f9e; transform: scale(1.08); }
   .picker-day.empty { pointer-events: none; }
   .picker-day:disabled { color: #d0c4e0; cursor: not-allowed; text-decoration: line-through; }
   .picker-day.selected { background: linear-gradient(135deg, #ff6b9d, #c88bff); color: white; font-weight: 800; box-shadow: 0 4px 12px rgba(200,100,180,0.4); }
   .picker-day.today { color: #ff6b9d; font-weight: 800; }
-  .picker-day.today::after { content: ''; position: absolute; bottom: 3px; left: 50%; transform: translateX(-50%); width: 3px; height: 3px; background: #ff6b9d; border-radius: 50%; }
+  .picker-day.today::after { content: ''; position: absolute; bottom: 2px; left: 50%; transform: translateX(-50%); width: 3px; height: 3px; background: #ff6b9d; border-radius: 50%; }
   .picker-day.selected.today::after { background: white; }
 
-  .time-section-title { font-family: 'Playfair Display', serif; font-size: 0.95rem; color: #6a3f9e; font-weight: 700; margin-bottom: 0.5rem; text-align: center; }
+  .time-section-title { font-family: 'Playfair Display', serif; font-size: 0.9rem; color: #6a3f9e; font-weight: 700; margin-bottom: 0.4rem; text-align: center; }
   .time-row { display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
-  .time-col { display: flex; flex-direction: column; align-items: center; gap: 0.3rem; }
-  .time-col label { font-size: 0.65rem; font-weight: 800; color: #b8a5d4; text-transform: uppercase; }
-  .time-btn { background: rgba(255,255,255,0.9); border: none; width: 50px; height: 24px; border-radius: 8px; font-size: 0.8rem; color: #7a4ca8; cursor: pointer; font-weight: 700; }
+  .time-col { display: flex; flex-direction: column; align-items: center; gap: 0.2rem; }
+  .time-col label { font-size: 0.6rem; font-weight: 800; color: #b8a5d4; text-transform: uppercase; }
+  .time-btn { background: rgba(255,255,255,0.9); border: none; width: 45px; height: 22px; border-radius: 6px; font-size: 0.75rem; color: #7a4ca8; cursor: pointer; font-weight: 700; }
   .time-btn:hover { background: linear-gradient(135deg, #ff6b9d, #c88bff); color: white; }
   .time-value {
-    background: linear-gradient(135deg, #ffe3ec, #f2e0ff); width: 50px; height: 42px; border-radius: 12px;
-    display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: #6a3f9e;
+    background: linear-gradient(135deg, #ffe3ec, #f2e0ff); width: 45px; height: 38px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: #6a3f9e;
     box-shadow: inset 0 0 0 1px rgba(255,255,255,0.9), 0 4px 10px rgba(160,100,200,0.1);
   }
-  .time-colon { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: #c8a5e8; margin-top: 1.2rem; }
-  .picked-summary { margin-top: 0.7rem; font-size: 0.85rem; color: #7a4ca8; font-weight: 700; min-height: 1.1rem; }
+  .time-colon { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: #c8a5e8; margin-top: 1rem; }
+  .picked-summary { margin-top: 0.5rem; font-size: 0.8rem; color: #7a4ca8; font-weight: 700; min-height: 1rem; }
   .picked-summary b { background: linear-gradient(135deg, #b06ab3, #ff6b9d); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-  /* Карточки мест */
-  .activities { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; margin: 0.4rem 0 0.8rem; position: relative; z-index: 3; }
+  .activities { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin: 0.3rem 0 0.6rem; position: relative; z-index: 3; }
   .act-btn {
-    background: rgba(255,255,255,0.9); border: 2px solid transparent; border-radius: 18px; padding: 0.75rem 0.4rem; font-size: 0.82rem;
-    display: flex; flex-direction: column; align-items: center; gap: 0.3rem; transition: all 0.3s; color: #5a4a70; font-weight: 700; cursor: pointer;
+    background: rgba(255,255,255,0.9); border: 2px solid transparent; border-radius: 16px; padding: 0.65rem 0.3rem; font-size: 0.78rem;
+    display: flex; flex-direction: column; align-items: center; gap: 0.2rem; transition: all 0.3s; color: #5a4a70; font-weight: 700; cursor: pointer;
     box-shadow: 0 4px 12px rgba(160,100,200,0.1);
   }
-  .act-btn span { font-size: 1.5rem; }
-  .act-btn:hover { transform: translateY(-3px); border-color: #ffb3d9; box-shadow: 0 10px 20px rgba(160,100,200,0.2); }
-  .act-btn.selected { border-color: #ff6b9d; background: linear-gradient(135deg, #ffe3ec, #f2e0ff); transform: translateY(-3px); box-shadow: 0 10px 22px rgba(255,107,157,0.3); }
+  .act-btn span { font-size: 1.4rem; }
+  .act-btn:hover { transform: translateY(-3px); border-color: #ffb3d9; box-shadow: 0 8px 18px rgba(160,100,200,0.2); }
+  .act-btn.selected { border-color: #ff6b9d; background: linear-gradient(135deg, #ffe3ec, #f2e0ff); transform: translateY(-3px); box-shadow: 0 8px 18px rgba(255,107,157,0.3); }
 
-  /* Инпут пожеланий */
   .wish-input {
-    width: 100%; background: rgba(255,255,255,0.85); border: 2px solid #e2d1f0; border-radius: 16px;
-    padding: 0.7rem 1rem; font-family: inherit; font-size: 0.9rem; color: #5a4a70; outline: none; margin-bottom: 0.8rem;
+    width: 100%; background: rgba(255,255,255,0.85); border: 2px solid #e2d1f0; border-radius: 14px;
+    padding: 0.6rem 0.9rem; font-family: inherit; font-size: 0.85rem; color: #5a4a70; outline: none; margin-bottom: 0.6rem;
     transition: border-color 0.3s;
   }
   .wish-input:focus { border-color: #ff6b9d; }
 
-  .countdown { display: flex; justify-content: center; gap: 0.5rem; margin: 1rem 0; position: relative; z-index: 3; }
+  /* Блок подсказки и погоды */
+  .hint-box {
+    background: rgba(255, 255, 255, 0.75); border-radius: 16px; padding: 0.7rem 0.9rem; margin-bottom: 0.8rem;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.9); text-align: left; position: relative; z-index: 3;
+  }
+  .hint-box div { font-size: 0.8rem; color: #7a4ca8; font-weight: 600; margin-bottom: 0.2rem; }
+  .hint-box div:last-child { margin-bottom: 0; color: #8a76a8; font-weight: 500; font-size: 0.76rem; }
+
+  .countdown { display: flex; justify-content: center; gap: 0.4rem; margin: 0.8rem 0; position: relative; z-index: 3; }
   .time-box {
-    background: rgba(255,255,255,0.85); padding: 0.6rem 0.3rem; border-radius: 14px; min-width: 52px;
+    background: rgba(255,255,255,0.85); padding: 0.5rem 0.25rem; border-radius: 12px; min-width: 48px;
     box-shadow: 0 6px 16px rgba(160,100,200,0.14), inset 0 1px 0 rgba(255,255,255,0.9);
   }
-  .time-box div:first-child { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: #7a4ca8; }
-  .time-box div:last-child { font-size: 0.55rem; color: #9a86b8; text-transform: uppercase; font-weight: 700; }
+  .time-box div:first-child { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: #7a4ca8; }
+  .time-box div:last-child { font-size: 0.5rem; color: #9a86b8; text-transform: uppercase; font-weight: 700; }
 
-  .sent-note { font-size: 0.8rem; color: #2b8a3e; font-weight: 700; margin-top: 0.5rem; min-height: 1.1rem; position: relative; z-index: 3; }
+  .sent-note { font-size: 0.75rem; color: #2b8a3e; font-weight: 700; margin-top: 0.4rem; min-height: 1rem; position: relative; z-index: 3; }
 
   .confetti { position: fixed; width: 10px; height: 10px; top: -20px; animation: fall linear forwards; pointer-events: none; z-index: 999; }
   @keyframes fall { to { transform: translateY(110vh) rotate(720deg); opacity: 0; } }
@@ -327,7 +329,6 @@
     <h1>Ура! Я так<br><span class="accent">волновался!</span> 😍</h1>
     <div class="divider"></div>
     
-    <!-- Слайдер воспоминаний -->
     <div class="memory-slider">
       <div class="memory-card active"><span>✨</span>Каждая встреча с тобой особенная</div>
       <div class="memory-card"><span>🌸</span>Ты делаешь этот мир ярче</div>
@@ -359,7 +360,7 @@
       <div class="picker-days" id="daysGrid"></div>
     </div>
 
-    <div class="picker" style="padding: 0.8rem;">
+    <div class="picker" style="padding: 0.7rem;">
       <div class="time-section-title">Во сколько?</div>
       <div class="time-row">
         <div class="time-col">
@@ -408,16 +409,22 @@
     <div class="emoji-big">😻</div>
     <h1>Ура! Это <span class="accent">свидание</span> 💛</h1>
     <div class="divider"></div>
-    <p style="font-size:0.9rem;">Дарья, жду тебя <b id="finalDate"></b> в <b id="finalTime"></b>.<br>Нас ждёт: <b id="finalAct"></b>!</p>
-    <div class="countdown">
+    <p style="font-size:0.85rem; margin-bottom: 0.6rem;">Дарья, жду тебя <b id="finalDate"></b> в <b id="finalTime"></b>.<br>Нас ждёт: <b id="finalAct"></b>!</p>
+    
+    <!-- Подсказка и погода -->
+    <div class="hint-box">
+      <div>🌤️ <b>Прогноз погоды:</b> 100% тепла и романтики</div>
+      <div>🔮 <b>Подсказка:</b> Место встречи изменить нельзя, оно будет самым уютным! 😉</div>
+    </div>
+
+    <div class="countdown" style="margin: 0.6rem 0;">
       <div class="time-box"><div id="days">00</div><div>дней</div></div>
       <div class="time-box"><div id="hours">00</div><div>часов</div></div>
       <div class="time-box"><div id="mins">00</div><div>минут</div></div>
       <div class="time-box"><div id="secs">00</div><div>секунд</div></div>
     </div>
-    <button class="btn-primary" onclick="addToCalendar()" style="margin-top:0.3rem; padding: 0.8rem 1.5rem;">📅 Добавить в календарь</button>
+    <button class="btn-primary" onclick="addToCalendar()" style="padding: 0.7rem 1.2rem; font-size: 0.9rem;">📅 В календарь</button>
     <p class="sent-note">✅ Ответ отправлен в Telegram!</p>
-    <p style="margin-top:0.5rem; font-size:0.75rem; color:#9a86b8;">ОТВЕТ СОХРАНЁН ✓</p>
   </div>
 </div>
 
@@ -430,39 +437,27 @@
     const audio = document.getElementById('bgAudio');
     const btn = document.getElementById('musicBtn');
     if (musicPlaying) {
-      audio.pause();
-      btn.classList.remove('playing');
-      btn.textContent = '🎵';
-      musicPlaying = false;
+      audio.pause(); btn.classList.remove('playing'); btn.textContent = '🎵'; musicPlaying = false;
     } else {
       audio.play().then(() => {
-        btn.classList.add('playing');
-        btn.textContent = '🎶';
-        musicPlaying = true;
-      }).catch(e => console.log('Автовоспроизведение заблокировано браузером'));
+        btn.classList.add('playing'); btn.textContent = '🎶'; musicPlaying = true;
+      }).catch(e => console.log(e));
     }
   }
 
-  // Слайдер воспоминаний
   let currentSlide = 0;
   const slides = document.querySelectorAll('.memory-card');
   const dots = document.querySelectorAll('.memory-dot');
   function setSlide(n) {
-    slides[currentSlide].classList.remove('active');
-    dots[currentSlide].classList.remove('active');
+    slides[currentSlide].classList.remove('active'); dots[currentSlide].classList.remove('active');
     currentSlide = n;
-    slides[currentSlide].classList.add('active');
-    dots[currentSlide].classList.add('active');
+    slides[currentSlide].classList.add('active'); dots[currentSlide].classList.add('active');
   }
-  setInterval(() => {
-    let next = (currentSlide + 1) % slides.length;
-    setSlide(next);
-  }, 3500);
+  setInterval(() => { setSlide((currentSlide + 1) % slides.length); }, 3500);
 
   const glowColors = ['rgba(255,180,220,0.7)', 'rgba(200,160,255,0.7)', 'rgba(255,220,200,0.6)'];
   for (let i = 0; i < 3; i++) {
-    const g = document.createElement('div');
-    g.className = 'glow';
+    const g = document.createElement('div'); g.className = 'glow';
     const size = 250 + Math.random() * 200;
     g.style.width = size + 'px'; g.style.height = size + 'px';
     g.style.left = Math.random() * 100 + 'vw'; g.style.top = Math.random() * 100 + 'vh';
@@ -470,8 +465,7 @@
     document.body.appendChild(g);
   }
   for (let i = 0; i < 10; i++) {
-    const b = document.createElement('div');
-    b.className = 'bubble';
+    const b = document.createElement('div'); b.className = 'bubble';
     const size = 8 + Math.random() * 35;
     b.style.width = size + 'px'; b.style.height = size + 'px';
     b.style.left = Math.random() * 100 + 'vw'; b.style.top = Math.random() * 100 + 'vh';
@@ -479,25 +473,23 @@
   }
 
   const loveSets = {
-    s1: [{ e: '😺', a: 'hop' }, { e: '😻', a: 'wave' }, { e: '💗', a: 'heartbeat' }, { e: '💕', a: 'shimmer' }],
-    s2: [{ e: '😻', a: 'hop' }, { e: '😽', a: 'wave' }, { e: '💖', a: 'heartbeat' }, { e: '💕', a: 'float-slow' }],
-    s3: [{ e: '🥰', a: 'heartbeat' }, { e: '😻', a: 'hop' }, { e: '😍', a: 'bounce-tilt' }],
-    s4: [{ e: '😺', a: 'hop' }, { e: '💖', a: 'heartbeat' }, { e: '😻', a: 'wave' }],
-    s5: [{ e: '😻', a: 'hop' }, { e: '💕', a: 'heartbeat' }, { e: '😽', a: 'wave' }],
-    s6: [{ e: '😻', a: 'hop' }, { e: '💛', a: 'heartbeat' }, { e: '💖', a: 'heartbeat' }]
+    s1: [{ e: '😺', a: 'hop' }, { e: '😻', a: 'wave' }, { e: '💗', a: 'heartbeat' }],
+    s2: [{ e: '😻', a: 'hop' }, { e: '😽', a: 'wave' }, { e: '💖', a: 'heartbeat' }],
+    s3: [{ e: '🥰', a: 'heartbeat' }, { e: '😻', a: 'hop' }],
+    s4: [{ e: '😺', a: 'hop' }, { e: '💖', a: 'heartbeat' }],
+    s5: [{ e: '😻', a: 'hop' }, { e: '💕', a: 'heartbeat' }],
+    s6: [{ e: '😻', a: 'hop' }, { e: '💛', a: 'heartbeat' }]
   };
 
   function createLoveLayer(screenId, items) {
     const screen = document.getElementById(screenId);
-    const layer = document.createElement('div');
-    layer.className = 'love-layer';
+    const layer = document.createElement('div'); layer.className = 'love-layer';
     const slotW = 100 / items.length;
     items.forEach((item, i) => {
-      const s = document.createElement('span');
-      s.className = 'love-sticker anim-' + item.a;
+      const s = document.createElement('span'); s.className = 'love-sticker anim-' + item.a;
       s.textContent = item.e;
       s.style.left = (i * slotW + Math.random() * (slotW * 0.7)) + '%';
-      s.style.top = (5 + Math.random() * 40) + 'px';
+      s.style.top = (4 + Math.random() * 35) + 'px';
       layer.appendChild(s);
     });
     screen.insertBefore(layer, screen.firstChild);
@@ -511,9 +503,7 @@
 
   const noTexts = ["Точно нет? 🤨", "Подумай ещё 🤔", "Я расстроюсь 😢", "Ну пожалуйста! 🥺", "Ты уверена? 😳", "Жми «Да»! ❤️", "Сдаюсь... 🥰"];
   let noCount = 0;
-  const noBtn = document.getElementById('noBtn');
-  const yesBtn = document.getElementById('yesBtn');
-  const screen2 = document.getElementById('s2');
+  const noBtn = document.getElementById('noBtn'), yesBtn = document.getElementById('yesBtn'), screen2 = document.getElementById('s2');
   let yesScale = 1;
 
   noBtn.addEventListener('click', (e) => {
@@ -526,35 +516,27 @@
       noBtn.style.top  = (btnRect.top  - cardRect.top)  + 'px';
     }
     noBtn.textContent = noCount < noTexts.length ? noTexts[noCount] : "Всё, я сдался 🥹";
-    noCount++;
-    yesScale += 0.1;
-    yesBtn.style.transform = `scale(${yesScale})`;
+    noCount++; yesScale += 0.1; yesBtn.style.transform = `scale(${yesScale})`;
     requestAnimationFrame(moveNoBtn);
   });
 
   function moveNoBtn() {
     const cardRect = screen2.getBoundingClientRect();
     const btnW = noBtn.offsetWidth, btnH = noBtn.offsetHeight;
-    const x = 10 + Math.random() * Math.max(10, cardRect.width - btnW - 20);
-    const y = 100 + Math.random() * Math.max(10, cardRect.height - btnH - 120);
-    noBtn.style.left = x + 'px';
-    noBtn.style.top = y + 'px';
+    noBtn.style.left = (10 + Math.random() * Math.max(10, cardRect.width - btnW - 20)) + 'px';
+    noBtn.style.top = (100 + Math.random() * Math.max(10, cardRect.height - btnH - 120)) + 'px';
   }
 
-  const wrap = document.getElementById('scratchWrap');
-  const canvas = document.getElementById('scratchCanvas');
-  const ctx = canvas.getContext('2d');
-  const progressFill = document.getElementById('progressFill');
+  const wrap = document.getElementById('scratchWrap'), canvas = document.getElementById('scratchCanvas'), ctx = canvas.getContext('2d'), progressFill = document.getElementById('progressFill');
   let scratching = false, revealed = false;
 
   function initScratch() {
-    const r = wrap.getBoundingClientRect();
-    canvas.width = r.width; canvas.height = r.height;
+    const r = wrap.getBoundingClientRect(); canvas.width = r.width; canvas.height = r.height;
     const grad = ctx.createLinearGradient(0, 0, r.width, r.height);
     grad.addColorStop(0, '#ffc8e0'); grad.addColorStop(0.5, '#d4aaff'); grad.addColorStop(1, '#ffb0d8');
     ctx.fillStyle = grad; ctx.fillRect(0, 0, r.width, r.height);
     ctx.fillStyle = 'rgba(255,255,255,0.9)'; ctx.textAlign = 'center'; ctx.font = 'bold 14px Manrope, sans-serif';
-    ctx.fillText('✦  С О Т Р И   З Д Е СЬ  ✦', r.width / 2, r.height / 2 + 5);
+    ctx.fillText('✦  С О Т Р И   З Д Е С Б  ✦', r.width / 2, r.height / 2 + 5);
     ctx.globalCompositeOperation = 'destination-out';
   }
 
@@ -573,29 +555,20 @@
   function checkReveal() {
     if (revealed) return;
     const img = ctx.getImageData(0, 0, canvas.width, canvas.height);
-    let clear = 0;
-    for (let i = 3; i < img.data.length; i += 4) if (img.data[i] < 30) clear++;
+    let clear = 0; for (let i = 3; i < img.data.length; i += 4) if (img.data[i] < 30) clear++;
     const pct = clear / (canvas.width * canvas.height);
     progressFill.style.width = Math.min(100, Math.round(pct * 100 / 0.85)) + '%';
     if (pct > 0.85) {
-      revealed = true;
-      canvas.style.transition = 'opacity 0.6s'; canvas.style.opacity = '0';
+      revealed = true; canvas.style.transition = 'opacity 0.6s'; canvas.style.opacity = '0';
       burstHearts(); setTimeout(() => show(2), 700);
     }
   }
 
   const MONTH_NAMES = ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
   const today = new Date(); today.setHours(0,0,0,0);
-  let viewDate = new Date(today.getFullYear(), today.getMonth(), 1);
-  let selectedDate = null;
-  let hour = 14, minutes = 0;
+  let viewDate = new Date(today.getFullYear(), today.getMonth(), 1), selectedDate = null, hour = 14, minutes = 0;
 
-  const daysGrid = document.getElementById('daysGrid');
-  const monthTitle = document.getElementById('monthTitle');
-  const prevBtn = document.getElementById('prevMonth');
-  const nextBtn = document.getElementById('nextMonth');
-  const summary = document.getElementById('summary');
-  const confirmBtn = document.getElementById('confirmBtn');
+  const daysGrid = document.getElementById('daysGrid'), monthTitle = document.getElementById('monthTitle'), prevBtn = document.getElementById('prevMonth'), nextBtn = document.getElementById('nextMonth'), summary = document.getElementById('summary'), confirmBtn = document.getElementById('confirmBtn');
 
   function renderCalendar() {
     const year = viewDate.getFullYear(), month = viewDate.getMonth();
@@ -603,8 +576,7 @@
     prevBtn.disabled = viewDate <= new Date(today.getFullYear(), today.getMonth(), 1);
     daysGrid.innerHTML = '';
     
-    let startOffset = new Date(year, month, 1).getDay() - 1;
-    if (startOffset < 0) startOffset = 6;
+    let startOffset = new Date(year, month, 1).getDay() - 1; if (startOffset < 0) startOffset = 6;
     for (let i = 0; i < startOffset; i++) daysGrid.appendChild(document.createElement('div'));
 
     const daysInMonth = new Date(year, month + 1, 0).getDate();
@@ -612,9 +584,7 @@
       const btn = document.createElement('button');
       btn.type = 'button'; btn.className = 'picker-day'; btn.textContent = d;
       const thisDate = new Date(year, month, d); thisDate.setHours(0,0,0,0);
-      if (thisDate < today) {
-        btn.disabled = true;
-      } else {
+      if (thisDate < today) { btn.disabled = true; } else {
         if (thisDate.getTime() === today.getTime()) btn.classList.add('today');
         if (selectedDate && thisDate.getTime() === selectedDate.getTime()) btn.classList.add('selected');
         btn.addEventListener('click', () => { selectedDate = thisDate; renderCalendar(); updateSummary(); checkConfirm(); });
@@ -627,8 +597,7 @@
   nextBtn.addEventListener('click', () => { viewDate.setMonth(viewDate.getMonth() + 1); renderCalendar(); });
 
   function changeTime(isHour, delta) {
-    if (isHour) hour = (hour + delta + 24) % 24;
-    else minutes = (minutes + delta + 60) % 60;
+    if (isHour) hour = (hour + delta + 24) % 24; else minutes = (minutes + delta + 60) % 60;
     document.getElementById('hourVal').textContent = String(hour).padStart(2,'0');
     document.getElementById('minVal').textContent = String(minutes).padStart(2,'0');
     updateSummary();
@@ -679,7 +648,6 @@
     msg += `\n\nОна сказала «ДА»! 💕`;
 
     sendTelegram(msg);
-
     for (let i = 0; i < 50; i++) setTimeout(createConfetti, i * 35);
     burstHearts();
   }

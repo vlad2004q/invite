@@ -309,8 +309,8 @@
 </head>
 <body>
 
-<button class="music-btn" id="musicBtn" onclick="toggleMusic()" title="Музыка">🎵</button>
-<audio id="bgAudio" loop src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf7f6.mp3?filename=romantic-love-112190.mp3"></audio>
+<button class="music-btn" id="musicBtn" onclick="toggleMusic()" title="Включить музыку">🎵</button>
+<audio id="bgAudio" loop preload="auto" src="https://actions.google.com/sounds/v1/ambiences/daytime_forest_bonfire.ogg"></audio>
 
 <div class="card" id="mainCard">
   <div id="s1" class="screen active">
@@ -464,7 +464,10 @@
     } else {
       audio.play().then(() => {
         btn.classList.add('playing'); btn.textContent = '🎶'; musicPlaying = true;
-      }).catch(e => console.log(e));
+      }).catch(e => {
+        console.log("Ошибка воспроизведения:", e);
+        alert("Нажмите еще раз, чтобы разрешить музыку в браузере 🎵");
+      });
     }
   }
 
@@ -563,7 +566,7 @@
     grad.addColorStop(0, '#ffc8e0'); grad.addColorStop(0.5, '#d4aaff'); grad.addColorStop(1, '#ffb0d8');
     ctx.fillStyle = grad; ctx.fillRect(0, 0, r.width, r.height);
     ctx.fillStyle = 'rgba(255,255,255,0.9)'; ctx.textAlign = 'center'; ctx.font = 'bold 14px Manrope, sans-serif';
-    ctx.fillText('✦  С О Т Р И   З Д Е С Ь  ✦', r.width / 2, r.height / 2 + 5);
+    ctx.fillText('✦  С О Т Р И   З Д Е С Б  ✦', r.width / 2, r.height / 2 + 5);
     ctx.globalCompositeOperation = 'destination-out';
   }
 

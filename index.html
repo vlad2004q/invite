@@ -60,7 +60,7 @@
     background: rgba(255,255,255,0.72);
     backdrop-filter: blur(24px) saturate(140%);
     -webkit-backdrop-filter: blur(24px) saturate(140%);
-    padding: 1.6rem 1.4rem;
+    padding: 1.5rem 1.3rem;
     border-radius: 32px;
     box-shadow:
       0 30px 70px rgba(122, 76, 168, 0.22),
@@ -71,8 +71,8 @@
     width: 92%;
     position: relative;
     z-index: 10;
-    min-height: 580px;
-    max-height: 90vh;
+    min-height: 560px;
+    max-height: 92vh;
     overflow-y: auto;
     display: flex; flex-direction: column;
     justify-content: center;
@@ -86,7 +86,7 @@
   }
 
   .love-layer {
-    position: absolute; top: 0; left: 0; right: 0; height: 110px;
+    position: absolute; top: 0; left: 0; right: 0; height: 100px;
     pointer-events: none; z-index: 1; overflow: hidden;
     border-radius: 32px 32px 0 0;
     -webkit-mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
@@ -97,7 +97,7 @@
     filter: drop-shadow(0 5px 8px rgba(220,120,200,0.3));
     will-change: transform; user-select: none;
   }
-  .love-sticker.cat { font-size: 1.9rem; opacity: 0.9; }
+  .love-sticker.cat { font-size: 1.8rem; opacity: 0.9; }
 
   .anim-hop { animation: hop 3s ease-in-out infinite; }
   @keyframes hop { 0%, 100% { transform: translateY(0) rotate(-6deg) scale(1); } 50% { transform: translateY(0) rotate(-4deg) scale(1); } }
@@ -114,7 +114,7 @@
 
   h1 {
     font-family: 'Playfair Display', serif;
-    color: #6a3f9e; font-size: 1.75rem; margin: 0 0 0.6rem;
+    color: #6a3f9e; font-size: 1.65rem; margin: 0 0 0.5rem;
     line-height: 1.2; font-weight: 700; letter-spacing: -0.01em;
     text-shadow: 0 2px 20px rgba(200, 150, 255, 0.35);
     position: relative; z-index: 3;
@@ -124,14 +124,14 @@
     background: linear-gradient(135deg, #b06ab3, #ff6b9d);
     -webkit-background-clip: text; -webkit-text-fill-color: transparent;
   }
-  p { color: #7c6b92; font-size: 0.95rem; margin: 0 0 0.8rem; font-weight: 500; position: relative; z-index: 3; }
+  p { color: #7c6b92; font-size: 0.9rem; margin: 0 0 0.7rem; font-weight: 500; position: relative; z-index: 3; }
   .divider {
-    width: 50px; height: 2px; margin: 0.5rem auto 1rem;
+    width: 45px; height: 2px; margin: 0.4rem auto 0.8rem;
     background: linear-gradient(90deg, transparent, #d4a5ff, #ffb3d9, transparent);
     border-radius: 2px; position: relative; z-index: 3;
   }
   .emoji-big {
-    font-size: 3.2rem; line-height: 1; display: inline-block;
+    font-size: 3rem; line-height: 1; display: inline-block;
     animation: bounce 2.4s ease-in-out infinite;
     filter: drop-shadow(0 10px 18px rgba(180,120,220,0.35));
     margin-bottom: 0.2rem; position: relative; z-index: 3;
@@ -139,8 +139,8 @@
   @keyframes bounce { 0%,100% { transform: translateY(0) rotate(-4deg); } 50% { transform: translateY(-10px) rotate(4deg); } }
   
   button {
-    border: none; border-radius: 50px; padding: 0.9rem 1.8rem;
-    font-size: 1rem; font-weight: 700; cursor: pointer;
+    border: none; border-radius: 50px; padding: 0.8rem 1.6rem;
+    font-size: 0.95rem; font-weight: 700; cursor: pointer;
     transition: transform 0.25s cubic-bezier(0.22,1,0.36,1), box-shadow 0.25s ease, background 0.25s ease;
     font-family: 'Manrope', sans-serif; letter-spacing: 0.02em;
     position: relative; z-index: 3;
@@ -163,12 +163,12 @@
   #s1 { padding: 0; }
   .scratch-title {
     font-family: 'Playfair Display', serif;
-    font-size: 1.6rem; color: #6a3f9e; margin-bottom: 0.3rem;
+    font-size: 1.5rem; color: #6a3f9e; margin-bottom: 0.3rem;
     font-weight: 700; line-height: 1.2; position: relative; z-index: 3;
   }
-  .scratch-sub { font-size: 0.88rem; color: #8a76a8; margin-bottom: 1rem; font-weight: 500; position: relative; z-index: 3; }
+  .scratch-sub { font-size: 0.85rem; color: #8a76a8; margin-bottom: 0.9rem; font-weight: 500; position: relative; z-index: 3; }
   .scratch-wrap {
-    position: relative; width: 100%; height: 300px; border-radius: 24px;
+    position: relative; width: 100%; height: 280px; border-radius: 22px;
     background: linear-gradient(135deg, #fff5fa 0%, #f3e5ff 50%, #ffe8f3 100%);
     box-shadow: 0 20px 45px rgba(160, 100, 200, 0.22), 0 0 0 3px rgba(255,255,255,0.5);
     margin: 0; overflow: hidden; isolation: isolate; z-index: 2;
@@ -177,57 +177,57 @@
     position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
     padding: 1rem; text-align: center; background: radial-gradient(circle at 50% 40%, rgba(255,255,255,0.6), transparent 70%); z-index: 1;
   }
-  .scratch-content .big-emoji { font-size: 4rem; animation: pulse 2s infinite; filter: drop-shadow(0 8px 16px rgba(200,120,220,0.4)); }
+  .scratch-content .big-emoji { font-size: 3.8rem; animation: pulse 2s infinite; filter: drop-shadow(0 8px 16px rgba(200,120,220,0.4)); }
   @keyframes pulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.08)} }
-  .scratch-content h2 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #7a4ca8; margin: 0.5rem 0 0.2rem; font-weight: 700; }
-  .scratch-content p { font-size: 0.88rem; color: #9578b8; margin: 0; font-weight: 500; }
-  .scratch-canvas { position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: block; cursor: grab; z-index: 2; border-radius: 24px; }
+  .scratch-content h2 { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: #7a4ca8; margin: 0.4rem 0 0.2rem; font-weight: 700; }
+  .scratch-content p { font-size: 0.85rem; color: #9578b8; margin: 0; font-weight: 500; }
+  .scratch-canvas { position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: block; cursor: grab; z-index: 2; border-radius: 22px; }
   .scratch-canvas:active { cursor: grabbing; }
   .progress-bar {
-    position: absolute; top: 10px; left: 10px; right: 10px; height: 5px;
-    background: rgba(255,255,255,0.55); border-radius: 5px; overflow: hidden; pointer-events: none; z-index: 5;
+    position: absolute; top: 8px; left: 10px; right: 10px; height: 4px;
+    background: rgba(255,255,255,0.55); border-radius: 4px; overflow: hidden; pointer-events: none; z-index: 5;
   }
-  .progress-fill { height: 100%; width: 0%; background: linear-gradient(90deg, #ff6b9d, #c88bff); border-radius: 5px; transition: width 0.15s ease; }
+  .progress-fill { height: 100%; width: 0%; background: linear-gradient(90deg, #ff6b9d, #c88bff); border-radius: 4px; transition: width 0.15s ease; }
 
   #s2 { position: relative; }
-  .answer-btns { display: flex; justify-content: center; gap: 1rem; margin-top: 1.2rem; position: relative; min-height: 60px; align-items: center; z-index: 5; }
+  .answer-btns { display: flex; justify-content: center; gap: 1rem; margin-top: 1rem; position: relative; min-height: 55px; align-items: center; z-index: 5; }
   #noBtn {
-    position: relative; white-space: nowrap; font-size: 1rem; line-height: 1; padding: 0.9rem 1.8rem; z-index: 50;
+    position: relative; white-space: nowrap; font-size: 0.95rem; line-height: 1; padding: 0.8rem 1.6rem; z-index: 50;
     transition: left 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), top 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
   #noBtn.absolute { position: absolute; box-shadow: 0 10px 26px rgba(180,140,220,0.4); transform-origin: center center; }
 
   .memory-slider {
-    background: rgba(255,255,255,0.65); border-radius: 20px; padding: 0.9rem; margin-bottom: 0.8rem;
+    background: rgba(255,255,255,0.65); border-radius: 18px; padding: 0.8rem; margin-bottom: 0.7rem;
     box-shadow: inset 0 0 0 1px rgba(255,255,255,0.9), 0 10px 25px rgba(160,100,200,0.12);
     position: relative; z-index: 3;
   }
-  .memory-card { display: none; font-size: 0.88rem; color: #7a4ca8; font-weight: 600; line-height: 1.35; }
+  .memory-card { display: none; font-size: 0.85rem; color: #7a4ca8; font-weight: 600; line-height: 1.3; }
   .memory-card.active { display: block; animation: fadeIn 0.5s ease; }
-  .memory-card span { display: block; font-size: 2rem; margin-bottom: 0.2rem; }
-  .memory-dots { display: flex; justify-content: center; gap: 6px; margin-top: 0.5rem; }
-  .memory-dot { width: 6px; height: 6px; border-radius: 50%; background: #d0c4e0; transition: background 0.3s; cursor: pointer; }
+  .memory-card span { display: block; font-size: 1.8rem; margin-bottom: 0.2rem; }
+  .memory-dots { display: flex; justify-content: center; gap: 5px; margin-top: 0.4rem; }
+  .memory-dot { width: 5px; height: 5px; border-radius: 50%; background: #d0c4e0; transition: background 0.3s; cursor: pointer; }
   .memory-dot.active { background: #ff6b9d; transform: scale(1.2); }
 
   .picker {
-    background: rgba(255,255,255,0.65); border-radius: 22px; padding: 0.9rem;
+    background: rgba(255,255,255,0.65); border-radius: 20px; padding: 0.8rem;
     box-shadow: inset 0 0 0 1px rgba(255,255,255,0.9), 0 10px 30px rgba(160,100,200,0.14);
-    margin-bottom: 0.6rem; position: relative; z-index: 3;
+    margin-bottom: 0.5rem; position: relative; z-index: 3;
   }
-  .picker-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.6rem; padding: 0 0.2rem; }
-  .picker-title { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: #6a3f9e; font-weight: 700; }
+  .picker-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem; padding: 0 0.2rem; }
+  .picker-title { font-family: 'Playfair Display', serif; font-size: 1rem; color: #6a3f9e; font-weight: 700; }
   .picker-nav {
-    background: rgba(255,255,255,0.9); border: none; width: 28px; height: 28px; border-radius: 50%; padding: 0;
-    font-size: 0.9rem; color: #7a4ca8; display: flex; align-items: center; justify-content: center; cursor: pointer;
+    background: rgba(255,255,255,0.9); border: none; width: 26px; height: 26px; border-radius: 50%; padding: 0;
+    font-size: 0.85rem; color: #7a4ca8; display: flex; align-items: center; justify-content: center; cursor: pointer;
     box-shadow: 0 3px 10px rgba(160,100,200,0.18); font-weight: 700; transition: all 0.2s;
   }
   .picker-nav:hover:not(:disabled) { background: linear-gradient(135deg, #ff6b9d, #c88bff); color: white; transform: scale(1.1); }
   .picker-nav:disabled { opacity: 0.35; cursor: not-allowed; }
   .picker-weekdays { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; margin-bottom: 0.2rem; }
-  .picker-weekdays div { font-size: 0.6rem; font-weight: 800; color: #b8a5d4; text-transform: uppercase; }
+  .picker-weekdays div { font-size: 0.58rem; font-weight: 800; color: #b8a5d4; text-transform: uppercase; }
   .picker-days { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; }
   .picker-day {
-    background: transparent; border: none; padding: 0.35rem 0; font-size: 0.82rem; font-weight: 600;
+    background: transparent; border: none; padding: 0.3rem 0; font-size: 0.8rem; font-weight: 600;
     color: #5a4a70; border-radius: 8px; cursor: pointer; font-family: inherit; transition: all 0.2s; position: relative;
   }
   .picker-day:hover:not(:disabled) { background: rgba(200,139,255,0.18); color: #6a3f9e; transform: scale(1.08); }
@@ -238,55 +238,68 @@
   .picker-day.today::after { content: ''; position: absolute; bottom: 2px; left: 50%; transform: translateX(-50%); width: 3px; height: 3px; background: #ff6b9d; border-radius: 50%; }
   .picker-day.selected.today::after { background: white; }
 
-  .time-section-title { font-family: 'Playfair Display', serif; font-size: 0.9rem; color: #6a3f9e; font-weight: 700; margin-bottom: 0.4rem; text-align: center; }
-  .time-row { display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+  .time-section-title { font-family: 'Playfair Display', serif; font-size: 0.85rem; color: #6a3f9e; font-weight: 700; margin-bottom: 0.3rem; text-align: center; }
+  .time-row { display: flex; align-items: center; justify-content: center; gap: 0.4rem; }
   .time-col { display: flex; flex-direction: column; align-items: center; gap: 0.2rem; }
-  .time-col label { font-size: 0.6rem; font-weight: 800; color: #b8a5d4; text-transform: uppercase; }
-  .time-btn { background: rgba(255,255,255,0.9); border: none; width: 45px; height: 22px; border-radius: 6px; font-size: 0.75rem; color: #7a4ca8; cursor: pointer; font-weight: 700; }
+  .time-col label { font-size: 0.58rem; font-weight: 800; color: #b8a5d4; text-transform: uppercase; }
+  .time-btn { background: rgba(255,255,255,0.9); border: none; width: 42px; height: 20px; border-radius: 6px; font-size: 0.7rem; color: #7a4ca8; cursor: pointer; font-weight: 700; }
   .time-btn:hover { background: linear-gradient(135deg, #ff6b9d, #c88bff); color: white; }
   .time-value {
-    background: linear-gradient(135deg, #ffe3ec, #f2e0ff); width: 45px; height: 38px; border-radius: 10px;
-    display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: #6a3f9e;
+    background: linear-gradient(135deg, #ffe3ec, #f2e0ff); width: 42px; height: 35px; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: #6a3f9e;
     box-shadow: inset 0 0 0 1px rgba(255,255,255,0.9), 0 4px 10px rgba(160,100,200,0.1);
   }
-  .time-colon { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: #c8a5e8; margin-top: 1rem; }
-  .picked-summary { margin-top: 0.5rem; font-size: 0.8rem; color: #7a4ca8; font-weight: 700; min-height: 1rem; }
+  .time-colon { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: #c8a5e8; margin-top: 0.9rem; }
+  .picked-summary { margin-top: 0.4rem; font-size: 0.78rem; color: #7a4ca8; font-weight: 700; min-height: 0.9rem; }
   .picked-summary b { background: linear-gradient(135deg, #b06ab3, #ff6b9d); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-  .activities { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin: 0.3rem 0 0.6rem; position: relative; z-index: 3; }
+  .activities { display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; margin: 0.2rem 0 0.5rem; position: relative; z-index: 3; }
   .act-btn {
-    background: rgba(255,255,255,0.9); border: 2px solid transparent; border-radius: 16px; padding: 0.65rem 0.3rem; font-size: 0.78rem;
-    display: flex; flex-direction: column; align-items: center; gap: 0.2rem; transition: all 0.3s; color: #5a4a70; font-weight: 700; cursor: pointer;
+    background: rgba(255,255,255,0.9); border: 2px solid transparent; border-radius: 14px; padding: 0.55rem 0.2rem; font-size: 0.75rem;
+    display: flex; flex-direction: column; align-items: center; gap: 0.15rem; transition: all 0.3s; color: #5a4a70; font-weight: 700; cursor: pointer;
     box-shadow: 0 4px 12px rgba(160,100,200,0.1);
   }
-  .act-btn span { font-size: 1.4rem; }
-  .act-btn:hover { transform: translateY(-3px); border-color: #ffb3d9; box-shadow: 0 8px 18px rgba(160,100,200,0.2); }
-  .act-btn.selected { border-color: #ff6b9d; background: linear-gradient(135deg, #ffe3ec, #f2e0ff); transform: translateY(-3px); box-shadow: 0 8px 18px rgba(255,107,157,0.3); }
+  .act-btn span { font-size: 1.3rem; }
+  .act-btn:hover { transform: translateY(-2px); border-color: #ffb3d9; box-shadow: 0 8px 16px rgba(160,100,200,0.2); }
+  .act-btn.selected { border-color: #ff6b9d; background: linear-gradient(135deg, #ffe3ec, #f2e0ff); transform: translateY(-2px); box-shadow: 0 8px 16px rgba(255,107,157,0.3); }
 
   .wish-input {
-    width: 100%; background: rgba(255,255,255,0.85); border: 2px solid #e2d1f0; border-radius: 14px;
-    padding: 0.6rem 0.9rem; font-family: inherit; font-size: 0.85rem; color: #5a4a70; outline: none; margin-bottom: 0.6rem;
+    width: 100%; background: rgba(255,255,255,0.85); border: 2px solid #e2d1f0; border-radius: 12px;
+    padding: 0.5rem 0.8rem; font-family: inherit; font-size: 0.8rem; color: #5a4a70; outline: none; margin-bottom: 0.5rem;
     transition: border-color 0.3s;
   }
   .wish-input:focus { border-color: #ff6b9d; }
 
-  /* Блок подсказки и погоды */
   .hint-box {
-    background: rgba(255, 255, 255, 0.75); border-radius: 16px; padding: 0.7rem 0.9rem; margin-bottom: 0.8rem;
+    background: rgba(255, 255, 255, 0.75); border-radius: 14px; padding: 0.5rem 0.8rem; margin-bottom: 0.5rem;
     box-shadow: inset 0 0 0 1px rgba(255,255,255,0.9); text-align: left; position: relative; z-index: 3;
   }
-  .hint-box div { font-size: 0.8rem; color: #7a4ca8; font-weight: 600; margin-bottom: 0.2rem; }
-  .hint-box div:last-child { margin-bottom: 0; color: #8a76a8; font-weight: 500; font-size: 0.76rem; }
+  .hint-box div { font-size: 0.75rem; color: #7a4ca8; font-weight: 600; margin-bottom: 0.1rem; }
+  .hint-box div:last-child { margin-bottom: 0; color: #8a76a8; font-weight: 500; font-size: 0.72rem; }
 
-  .countdown { display: flex; justify-content: center; gap: 0.4rem; margin: 0.8rem 0; position: relative; z-index: 3; }
+  .coupon-wrap {
+    position: relative; width: 100%; height: 75px; border-radius: 14px;
+    background: linear-gradient(135deg, #ffd1e3 0%, #f0d6ff 100%);
+    box-shadow: 0 4px 15px rgba(160,100,200,0.15); margin-bottom: 0.5rem; overflow: hidden; isolation: isolate; z-index: 3;
+  }
+  .coupon-content {
+    position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 0.3rem; text-align: center; z-index: 1;
+  }
+  .coupon-content span { font-size: 0.82rem; font-weight: 800; color: #6a3f9e; }
+  .coupon-content p { font-size: 0.72rem; color: #8a76a8; margin: 0; font-weight: 600; }
+  .coupon-canvas { position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: block; cursor: grab; z-index: 2; border-radius: 14px; }
+  .coupon-canvas:active { cursor: grabbing; }
+
+  .countdown { display: flex; justify-content: center; gap: 0.4rem; margin: 0.4rem 0; position: relative; z-index: 3; }
   .time-box {
-    background: rgba(255,255,255,0.85); padding: 0.5rem 0.25rem; border-radius: 12px; min-width: 48px;
+    background: rgba(255,255,255,0.85); padding: 0.4rem 0.2rem; border-radius: 10px; min-width: 44px;
     box-shadow: 0 6px 16px rgba(160,100,200,0.14), inset 0 1px 0 rgba(255,255,255,0.9);
   }
-  .time-box div:first-child { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: #7a4ca8; }
-  .time-box div:last-child { font-size: 0.5rem; color: #9a86b8; text-transform: uppercase; font-weight: 700; }
+  .time-box div:first-child { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: #7a4ca8; }
+  .time-box div:last-child { font-size: 0.48rem; color: #9a86b8; text-transform: uppercase; font-weight: 700; }
 
-  .sent-note { font-size: 0.75rem; color: #2b8a3e; font-weight: 700; margin-top: 0.4rem; min-height: 1rem; position: relative; z-index: 3; }
+  .sent-note { font-size: 0.72rem; color: #2b8a3e; font-weight: 700; margin-top: 0.3rem; min-height: 0.9rem; position: relative; z-index: 3; }
 
   .confetti { position: fixed; width: 10px; height: 10px; top: -20px; animation: fall linear forwards; pointer-events: none; z-index: 999; }
   @keyframes fall { to { transform: translateY(110vh) rotate(720deg); opacity: 0; } }
@@ -360,7 +373,7 @@
       <div class="picker-days" id="daysGrid"></div>
     </div>
 
-    <div class="picker" style="padding: 0.7rem;">
+    <div class="picker" style="padding: 0.6rem;">
       <div class="time-section-title">Во сколько?</div>
       <div class="time-row">
         <div class="time-col">
@@ -409,21 +422,28 @@
     <div class="emoji-big">😻</div>
     <h1>Ура! Это <span class="accent">свидание</span> 💛</h1>
     <div class="divider"></div>
-    <p style="font-size:0.85rem; margin-bottom: 0.6rem;">Дарья, жду тебя <b id="finalDate"></b> в <b id="finalTime"></b>.<br>Нас ждёт: <b id="finalAct"></b>!</p>
+    <p style="font-size:0.8rem; margin-bottom: 0.4rem;">Дарья, жду тебя <b id="finalDate"></b> в <b id="finalTime"></b>.<br>Нас ждёт: <b id="finalAct"></b>!</p>
     
-    <!-- Подсказка и погода -->
-    <div class="hint-box">
-      <div>🌤️ <b>Прогноз погоды:</b> 100% тепла и романтики</div>
-      <div>🔮 <b>Подсказка:</b> Место встречи изменить нельзя, оно будет самым уютным! 😉</div>
+    <div class="hint-box" style="padding: 0.4rem 0.7rem; margin-bottom: 0.4rem;">
+      <div>🌤️ <b>Погода:</b> 100% тепла и романтики</div>
+      <div>🔮 <b>Подсказка:</b> Место встречи будет самым уютным! 😉</div>
     </div>
 
-    <div class="countdown" style="margin: 0.6rem 0;">
+    <div class="coupon-wrap" id="couponWrap">
+      <div class="coupon-content">
+        <span>🎟️ СЕКРЕТНЫЙ КУПОН</span>
+        <p>Право на выполнение любого желания и десерт! 🍰</p>
+      </div>
+      <canvas class="coupon-canvas" id="couponCanvas"></canvas>
+    </div>
+
+    <div class="countdown" style="margin: 0.3rem 0;">
       <div class="time-box"><div id="days">00</div><div>дней</div></div>
       <div class="time-box"><div id="hours">00</div><div>часов</div></div>
       <div class="time-box"><div id="mins">00</div><div>минут</div></div>
       <div class="time-box"><div id="secs">00</div><div>секунд</div></div>
     </div>
-    <button class="btn-primary" onclick="addToCalendar()" style="padding: 0.7rem 1.2rem; font-size: 0.9rem;">📅 В календарь</button>
+    <button class="btn-primary" onclick="addToCalendar()" style="padding: 0.55rem 1rem; font-size: 0.82rem;">📅 В календарь</button>
     <p class="sent-note">✅ Ответ отправлен в Telegram!</p>
   </div>
 </div>
@@ -431,6 +451,9 @@
 <script>
   const BOT_TOKEN = '8983986462:AAGrcW4cJS53pIxI-0C1le-TB5cGnveVCJ4';
   const BOT_CHAT_ID = '1449436021';
+
+  let targetTimestamp = 0;
+  let countdownTimer = null;
 
   let musicPlaying = false;
   function toggleMusic() {
@@ -489,7 +512,7 @@
       const s = document.createElement('span'); s.className = 'love-sticker anim-' + item.a;
       s.textContent = item.e;
       s.style.left = (i * slotW + Math.random() * (slotW * 0.7)) + '%';
-      s.style.top = (4 + Math.random() * 35) + 'px';
+      s.style.top = (4 + Math.random() * 30) + 'px';
       layer.appendChild(s);
     });
     screen.insertBefore(layer, screen.firstChild);
@@ -499,6 +522,10 @@
   function show(n) {
     document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
     document.getElementById('s' + n).classList.add('active');
+    if (n === 6) {
+      initCoupon();
+      startCountdown();
+    }
   }
 
   const noTexts = ["Точно нет? 🤨", "Подумай ещё 🤔", "Я расстроюсь 😢", "Ну пожалуйста! 🥺", "Ты уверена? 😳", "Жми «Да»! ❤️", "Сдаюсь... 🥰"];
@@ -540,14 +567,14 @@
     ctx.globalCompositeOperation = 'destination-out';
   }
 
-  function scratch(x, y) { ctx.beginPath(); ctx.arc(x, y, 28, 0, Math.PI * 2); ctx.fill(); }
-  function getPos(e) { const r = canvas.getBoundingClientRect(); const p = e.touches ? e.touches[0] : e; return { x: p.clientX - r.left, y: p.clientY - r.top }; }
+  function scratch(x, y, c, rSize) { c.beginPath(); c.arc(x, y, rSize, 0, Math.PI * 2); c.fill(); }
+  function getPos(e, cElem) { const r = cElem.getBoundingClientRect(); const p = e.touches ? e.touches[0] : e; return { x: p.clientX - r.left, y: p.clientY - r.top }; }
   
-  canvas.addEventListener('mousedown', (e) => { scratching = true; const p = getPos(e); scratch(p.x, p.y); });
-  canvas.addEventListener('mousemove', (e) => { if (!scratching) return; e.preventDefault(); const p = getPos(e); scratch(p.x, p.y); checkReveal(); });
+  canvas.addEventListener('mousedown', (e) => { scratching = true; const p = getPos(e, canvas); scratch(p.x, p.y, ctx, 28); });
+  canvas.addEventListener('mousemove', (e) => { if (!scratching) return; e.preventDefault(); const p = getPos(e, canvas); scratch(p.x, p.y, ctx, 28); checkReveal(); });
   window.addEventListener('mouseup', () => { scratching = false; checkReveal(); });
-  canvas.addEventListener('touchstart', (e) => { scratching = true; const p = getPos(e); scratch(p.x, p.y); }, { passive: true });
-  canvas.addEventListener('touchmove', (e) => { if (!scratching) return; e.preventDefault(); const p = getPos(e); scratch(p.x, p.y); checkReveal(); }, { passive: false });
+  canvas.addEventListener('touchstart', (e) => { scratching = true; const p = getPos(e, canvas); scratch(p.x, p.y, ctx, 28); }, { passive: true });
+  canvas.addEventListener('touchmove', (e) => { if (!scratching) return; e.preventDefault(); const p = getPos(e, canvas); scratch(p.x, p.y, ctx, 28); checkReveal(); }, { passive: false });
   window.addEventListener('touchend', () => { scratching = false; checkReveal(); });
 
   window.addEventListener('load', initScratch);
@@ -562,6 +589,34 @@
       revealed = true; canvas.style.transition = 'opacity 0.6s'; canvas.style.opacity = '0';
       burstHearts(); setTimeout(() => show(2), 700);
     }
+  }
+
+  let couponInitialized = false;
+  function initCoupon() {
+    if (couponInitialized) return;
+    couponInitialized = true;
+    const cWrap = document.getElementById('couponWrap');
+    const cCanvas = document.getElementById('couponCanvas');
+    const cCtx = cCanvas.getContext('2d');
+    const r = cWrap.getBoundingClientRect();
+    cCanvas.width = r.width; cCanvas.height = r.height;
+    cCtx.fillStyle = '#b8a5d4';
+    cCtx.fillRect(0, 0, r.width, r.height);
+    cCtx.fillStyle = 'white'; cCtx.textAlign = 'center'; cCtx.font = 'bold 12px Manrope, sans-serif';
+    cCtx.fillText('🎟️ СТРИ КУПОН СЮДА 🎟️', r.width / 2, r.height / 2 + 4);
+    cCtx.globalCompositeOperation = 'destination-out';
+
+    let cScratching = false;
+    const onCStart = (e) => { cScratching = true; const p = getPos(e, cCanvas); scratch(p.x, p.y, cCtx, 20); };
+    const onCMove = (e) => { if (!cScratching) return; e.preventDefault(); const p = getPos(e, cCanvas); scratch(p.x, p.y, cCtx, 20); };
+    const onCEnd = () => { cScratching = false; };
+
+    cCanvas.addEventListener('mousedown', onCStart);
+    cCanvas.addEventListener('mousemove', onCMove);
+    window.addEventListener('mouseup', onCEnd);
+    cCanvas.addEventListener('touchstart', onCStart, { passive: true });
+    cCanvas.addEventListener('touchmove', onCMove, { passive: false });
+    window.addEventListener('touchend', onCEnd);
   }
 
   const MONTH_NAMES = ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
@@ -623,6 +678,9 @@
     document.getElementById('finalDate').textContent = `${d}.${m}.${y}`;
     document.getElementById('finalTime').textContent = `${String(hour).padStart(2,'0')}:${String(minutes).padStart(2,'0')}`;
     
+    const targetDate = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate(), hour, minutes, 0);
+    targetTimestamp = targetDate.getTime();
+
     sendTelegram(`📅 Дарья выбрала дату и время свидания!\n\nДата: ${d}.${m}.${y}\nВремя: ${String(hour).padStart(2,'0')}:${String(minutes).padStart(2,'0')}`);
     show(5);
   }
@@ -650,6 +708,33 @@
     sendTelegram(msg);
     for (let i = 0; i < 50; i++) setTimeout(createConfetti, i * 35);
     burstHearts();
+  }
+
+  function startCountdown() {
+    if (countdownTimer) clearInterval(countdownTimer);
+    function update() {
+      const now = Date.now();
+      const diff = targetTimestamp - now;
+      if (diff <= 0) {
+        document.getElementById('days').textContent = '00';
+        document.getElementById('hours').textContent = '00';
+        document.getElementById('mins').textContent = '00';
+        document.getElementById('secs').textContent = '00';
+        clearInterval(countdownTimer);
+        return;
+      }
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const mins = Math.floor((diff / 1000 / 60) % 60);
+      const secs = Math.floor((diff / 1000) % 60);
+
+      document.getElementById('days').textContent = String(days).padStart(2, '0');
+      document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('mins').textContent = String(mins).padStart(2, '0');
+      document.getElementById('secs').textContent = String(secs).padStart(2, '0');
+    }
+    update();
+    countdownTimer = setInterval(update, 1000);
   }
 
   function createConfetti() {

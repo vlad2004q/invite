@@ -1,5 +1,4 @@
-﻿$repo="invite"; $user="ТВОЙ_АККАУНТ_GITHUB"; @'
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -1025,4 +1024,3 @@
 <input type="hidden" id="timeInput">
 </body>
 </html>
-'@ | Set-Content -Path .\index.html -Encoding UTF8; if (Test-Path .git) { Remove-Item -Recurse -Force .git } ; git init; git add index.html; git commit -m "init"; git branch -M main; git remote add origin "https://github.com/$user/$repo.git"; git push -u origin main --force; Write-Host "`nГотово! Твоя ссылка для девушки: https://$user.github.io/$repo/" -ForegroundColor Green
